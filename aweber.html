@@ -48,7 +48,8 @@ jQuery(document).ready(function(){
 	        	//popdetialHideOther(arg);
 	        },
 	        error: function(){
-	            alert('error');
+	        	$('.squeeze_wrapper').html("");
+				$('.squeeze_wrapper').html("<div class='no_data'>Error ! Please try after sometime</div>");
 	        }
 	    }); 
 	}
