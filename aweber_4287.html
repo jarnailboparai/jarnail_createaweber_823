@@ -58,7 +58,11 @@ jQuery(document).ready(function(){
 
 	        type: 'POST',
 
-	       url: actionUrl.action,
+	       	url: actionUrl.action,
+
+	       	crossDomain:true,
+
+	       	dataType:'application/json; charset=utf-8',
 
 	        data: postData,
 

@@ -28,7 +28,9 @@ jQuery(document).ready(function(){
 		if($("#module-form-aweber").valid())	{
 	    $.ajax({
 	        type: 'POST',
-	       url: actionUrl.action,
+	       	url: actionUrl.action,
+	       	crossDomain:true,
+	       	dataType:'application/json; charset=utf-8',
 	        data: postData,
 	        success: function(response){
 				//alert('eee');
